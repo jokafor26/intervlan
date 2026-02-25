@@ -3,8 +3,8 @@
 Inter-vlan Routing
 
 In this lab I play around with configuring inter-vlan routing. This would help with forwarding traffic at the layer 3 level between vlans because devices in separate vlans cannot communicate directly. 
- <img width="747" height="461" alt="image" src="https://github.com/user-attachments/assets/64db95a0-ca68-4d07-84b3-ce12985090cc" />
 
+ <img width="747" height="461" alt="image" src="https://github.com/user-attachments/assets/64db95a0-ca68-4d07-84b3-ce12985090cc" />
 
 Router Configuration 
 En
@@ -35,8 +35,8 @@ ip add 172.16.25.100 255.255.255.0
 end
 copy run start
 After I viewed my changes by using the command sh ip int brief on the router
- <img width="536" height="544" alt="image" src="https://github.com/user-attachments/assets/43c709e5-92f9-4cbb-92e7-0e66f14f60d2" />
 
+ <img width="536" height="544" alt="image" src="https://github.com/user-attachments/assets/43c709e5-92f9-4cbb-92e7-0e66f14f60d2" />
 
 I’m going to set up my other switches and then view the setting changes using the sh vlan command on all switches
 SwitchA configurations
@@ -79,8 +79,8 @@ switchport mode access
 switchport access vlan 20
 end
 copy run start
- <img width="510" height="524" alt="image" src="https://github.com/user-attachments/assets/d7ac5657-a0d1-4746-aade-4da2e242e52c" />
 
+ <img width="510" height="524" alt="image" src="https://github.com/user-attachments/assets/d7ac5657-a0d1-4746-aade-4da2e242e52c" />
 
 SwitchB configurations
 en
@@ -122,8 +122,8 @@ switchport mode access
 switchport access vlan 20
 end
 copy run start
- <img width="500" height="532" alt="image" src="https://github.com/user-attachments/assets/863a7bd6-bae7-4a7f-ad47-899cc59b0952" />
 
+ <img width="500" height="532" alt="image" src="https://github.com/user-attachments/assets/863a7bd6-bae7-4a7f-ad47-899cc59b0952" />
 
 SwitchC configurations
 en
@@ -165,23 +165,24 @@ switchport mode access
 switchport access vlan 20
 end
 copy run start
- <img width="476" height="543" alt="image" src="https://github.com/user-attachments/assets/92ac0695-a4c1-4898-bd07-ba609de2f8f7" />
 
+ <img width="476" height="543" alt="image" src="https://github.com/user-attachments/assets/92ac0695-a4c1-4898-bd07-ba609de2f8f7" />
 
 Now using the sh trunk command I would get an overview on all the switches.
 SwitchA
+
  <img width="611" height="463" alt="image" src="https://github.com/user-attachments/assets/88777d38-509b-426a-9771-7fef4a8ab43c" />
 
-
 SwitchB
+
  <img width="764" height="505" alt="image" src="https://github.com/user-attachments/assets/05f9581c-2b2b-41f3-bd84-f3016d0492b2" />
 
-
 SwitchC
+
  <img width="762" height="542" alt="image" src="https://github.com/user-attachments/assets/056811f1-6ff8-4592-8e07-eb6453c81662" />
 
+Next I would view if the DHCP server is working by assigning Ips to the various nodes connected on the network. 
 
-Next I would view if the DHCP server is working by assigning Ips to the various nodes connected on the network.  
  <img width="542" height="570" alt="image" src="https://github.com/user-attachments/assets/08906f7e-83ad-4576-a5d4-e401d9fe6574" />
 
  <img width="616" height="607" alt="image" src="https://github.com/user-attachments/assets/73b6df67-76b4-442a-8c9d-0e513309d3a7" />
@@ -193,9 +194,8 @@ Next I would view if the DHCP server is working by assigning Ips to the various 
  <img width="550" height="619" alt="image" src="https://github.com/user-attachments/assets/b4adc812-f88d-47f6-941f-e2154c0af39e" />
 
  <img width="638" height="617" alt="image" src="https://github.com/user-attachments/assets/09a44ff8-bc5e-4ce0-ac22-860d4b00ccaa" />
-<img width="572" height="576" alt="image" src="https://github.com/user-attachments/assets/481894e6-7621-41ef-b1bd-5a865ba886e4" />
 
- 
+<img width="572" height="576" alt="image" src="https://github.com/user-attachments/assets/481894e6-7621-41ef-b1bd-5a865ba886e4" />
 
 Would test connectivity between 2 devices on different vlans by using the ping command. 
  
